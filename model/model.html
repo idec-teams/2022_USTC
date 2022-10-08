@@ -172,16 +172,13 @@
                                 <div class="card">
                                     <div class="stat-widget-one">
                                         <div class="stat-content dib">
-                                            <!--<h1 style="color: #002752;">总览</h1>
+                                            <h2 style="color: #002752;">Overview</h2>
                                             </br>
                                             <div class="stat-digit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                为了阐述反应的机制和分析反应的机理，我们进行了建模来模拟对应的反应并进行相关的验证和预测。建模部分分为两部分：不对称PCR和RPA反应。
+                                                To provide strategies for optimizing experimental results and to further verify the feasibility of the experimental design, we use the model as a prediction. In this project, the model we designed is divided into Theoretical calculation, optimal enzyme ratio and diffusion simulation.
                                             </div>
-                                            <div class="stat-digit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                <b>我们的模型中使用了以下符号：</b>
-                                            </div>
-                                            <br>
-                                            <div>
+                                           
+                                            <!--<div>
                                                 <center>
                                                     <table width="600" border="1">
                                                         <tr>
@@ -242,153 +239,13 @@
                                     <div class="stat-widget-one">
                                         <div class="stat-content dib">
                                             <div class="stat-text"></div>
-                                            <!--<h1 style="color: #002752;">不对称荧光定量 PCR</h1>
+                                            <h2 style="color: #002752;">Theoretical calculation</h2>
                                             </br>
                                             <div class="stat-digit">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不对称PCR是这次课题中的一个预实验，我们发现：如果实验中模版的数量设为基准1,并且两个引物量的比例设20:1，当我们不断调整两个引物的浓度（20:1,10:1/2, 5:1/4, 4:1/5等浓度），在两个引物的浓度为4:1/5时，ssDNA产量最大。根据这个实验事实，我们建立了模型来探索不对称PCR中ssDNA产量（实验中表现为相对荧光强度）和加入的引物的浓度的关系。探究这个关系也有助于在实际进行不对称PCR时提高产出ssDNA效率<sub>(1)</sub>。
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We calculated the feasibility of the reaction by using the Gaussian16 computer program: We used the opt freq work type for the measurements, The Gibbs free energy prediction of H2 reduction to N-Boc-3-pyrrolidinone was performed using b3lyp functional, 6-31g (d) as base groups (other keywords: scrf= (solvent = 10 water) geom=connectivity), The reducing reaction Gibbs free energy of the R and S configurations is equal to + 7.157 kJ/mol, respectively, +3.970 kJ/mol, The corresponding redox potential is -0.037 V, -0.021 V, Referring to the redox potential of NADPH at-0.32V, We believe that the reaction is thermodynamically feasible.
                                             </div>
-                                            <div class="stat-digit">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在不对称PCR模型中，我们首先讨论理论的PCR：我们把模版和引物的结合看作一个可逆的化学反应，得到反应方程和分离常数如下<sub>(2,3)</sub>。
-                                            </div>
-                                            <div>
-                                                <center><img
-                                                        src="../src/T--USTC--model_formula_fig1_new.png"
-                                                        width="582" height="283" /></center>
-                                            </div>
-
-                                            <div class="stat-digit">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在这个假设中，因为DNA聚合酶会将P-X扩展到X-X，所以P-X的量等于X-X的量。经过25轮PCR扩增，可以计算出相应引物浓度产生的ssDNA数量。
-
-                                            </div>
-                                            <div class="stat-digit">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在我们的模型中，不对称PCR还存在副反应，主要副反应是引物错配(primer mismatch)，即引物与模板序列的错误位点结合。在引物错配的情况中，得到的扩增产物与模版不同。我们用X^’来代表错配的产物，则可以将模型修正为如下方程：
-                                            </div>
-
-                                            <div>
-                                                <center><img
-                                                        src="../src/T--USTC--model_formula_fig2_new2.png"
-                                                        width="983" height="477" /></center>
-                                            </div>
-
-                                            <div class="stat-digit">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由于错配情况出现的概率随模版浓度增加而增加，我们需要假定K_2和引物浓度成正比关系。并且，由于两个引物的量不变且比例不变，所以我们在模型中以前一种引物的浓度代表不同的引物比例组（如用P=4表示两个引物的浓度为4:1/5的实验组）。根据这个修正后的模型，我们画出产物X( ssDNA) 和引物浓度P的关系，并且可以发现P在4左右时，ssDNA产量达到最大值，符合之前提到的实验结果。
-                                            </div>
-
-                                            <div>
-                                                <center><img
-                                                        src="../src/T--USTC--model_fig1.png"
-                                                        width="450" height="400" />
-                                                    <h6>图1:产物X（ssDNA）浓度即相对荧光强度与P（前引物）浓度关系的模型图像</h6>
-                                                </center>
-                                            </div>-->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!--<div class="row">
-                        <div class="test_div">
-                            <div class="col-lg-12">
-                                <div class="card">
-                                    <div class="stat-widget-one">
-                                        <div class="stat-content dib">
-                                            <div class="stat-text"></div>
-                                            <h1 style="color: #002752;">RPA</h1>
-                                            </br>
-                                            <div class="stat-digit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RPA
-                                                模型部分分为三个部分，从基础RPA（不加入适配体和tau蛋白）开始，循序渐进展开。
-                                            </div>
-                                            <div class="stat-digit"><b>1. 基础 RPA 模型</b>
-                                            </div>
-                                            <div class="stat-digit">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先，我们将RPA（重组酶聚合酶扩增）过程分解为如下的化学反应<sub>(4)</sub>：
-                                            </div>
-
-                                            <div>
-                                                <center><img
-                                                        src="../src/T--USTC--model_formula_fig3_new.png"
-                                                        width="521" height="203" /></center>
-                                            </div>
-
-                                            <div class="stat-digit">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;根据化学平衡理论和稳态近似方法（Michaelis-Menten方程所使用的假设），我们模拟了酶的催化过程，并推导出反应速率：
-                                            </div>
-
-                                            <div>
-                                                <center><img
-                                                        src="../src/T--USTC--model_formula_fig4.png"
-                                                        width="557" height="158" /></center>
-                                            </div>
-
-                                            <div class="stat-digit">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过拟合参考组的实验结果，并使用文献中的参数和调整实验得到的参数，平滑曲线后，我们绘制了在不同浓度模版下的扩增过程如下所示，模拟所得的图可以基本匹配实验结果。因此与实验的一致性支持了这个模型的正确性，也说明接下来从基础RPA模型出发所做的延伸和预测具有合理性。
-                                            </div>
-
-                                            <center>
-                                                <img src="../src/T--USTC--model_fig2.png"
-                                                    width="450" height="400" />
-                                                <h6>图 2.不同浓度模板下扩增过程的实验图像</h6>
-                                            </center>
-
-                                            <center>
-                                                <img src="../src/T--USTC--model_fig3.png"
-                                                    width="450" height="400" />
-                                                <h6>图3.不同浓度模板下扩增过程的建模图像</h6>
-                                            </center>
-
-                                            <div class="stat-digit"><b>2. 加入适配体的RPA模型</b>
-                                            </div>
-                                            <div class="stat-digit">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基于基础RPA模型，我们进一步模拟加入适配体的RPA模型。我们仍旧从化学平衡理论角度解释模型的机理：除了酶促扩增过程，还有模版与适配体的结合。因此加入适配体的竞争结合过程，描述为如下的平衡方程：
-                                            </div>
-
-                                            <div>
-                                                <center><img
-                                                        src="../src/T--USTC--model_formula_fig5.png"
-                                                        width="416" height="163" /></center>
-                                            </div>
-
-                                            <div class="stat-digit">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结合基础RPA模型所用的方法和参数，我们可以模拟如下图所示的扩增反应，这也与实验结果相匹配。
-                                            </div>
-
-                                            <center>
-                                                <img src="../src/T--USTC--model_fig4.png"
-                                                    width="450" height="400" />
-                                                <h6>图4.是否加入适配体条件下扩增反应的实验图像</h6>
-                                            </center>
-
-                                            <center>
-                                                <img src="../src/T--USTC--model_fig5.png"
-                                                    width="450" height="400" />
-                                                <h6>图5.是否加入适配体条件下扩增反应的建模图像</h6>
-                                            </center>
-
-                                            <div class="stat-digit"><b>3.加入适配体和tau蛋白的RPA模型</b>
-                                            </div>
-                                            <div class="stat-digit">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  我们仍旧从化学平衡理论的角度，基于前两个模型，加入了tau蛋白与适配体结合过程，因此出现了tau蛋白与模版竞争结合适配体的过程。
-                                            </div>
-
-                                            <div>
-                                                <center><img
-                                                        src="../src/T--USTC--model_formula_fig6.png"
-                                                        width="485" height="171" /></center>
-                                            </div>
-
-                                            <div class="stat-digit">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结合上述模型，我们可以模拟不同浓度tau蛋白下的扩增反应如下图，而且可以由此验证本次项目：Captamer方法进行AD早期诊断的可行性。
-                                            </div>
-
-                                            <center>
-                                                <img src="../src/T--USTC--model_fig6.png"
-                                                    width="450" height="400" />
-                                                <h6>图 6.不同tau蛋白浓度下扩增反应的建模图像</h6>
-                                            </center>
-
+                                            
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -398,6 +255,185 @@
 
 
                     <div class="row">
+                        <div class="test_div">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="stat-widget-one">
+                                        <div class="stat-content dib">
+                                            <div class="stat-text"></div>
+                                            <h2 style="color: #002752;">Optimal enzyme ratio</h2>
+                                            </br>
+                                            <div class="stat-digit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We hope that the modeling calculations will lead to the optimal feeding ratio to balance the equilibrium between the two enzymatic reactions.
+                                            </div>
+                                            <div class="stat-digit"><b>Table. 1. Symbol Description</b>
+                                            </div>
+                                            <div>
+                                                <center>
+                                                    <table width="600" border="1">
+                                                        <tr>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>Species names</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>N-Boc-3-pyrrolidinone</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>N-boc-3-pyrrolidinol</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>Glucose</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>Gluconolactone</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>TbsADH</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>GDH</center>
+                                                                </b></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>Symbol used</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>S<sub>1</sub></center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>P<sub>1</sub></center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>S<sub>2</sub></center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>P<sub>2</sub></center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>E<sub>1</sub></center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>E<sub>2</sub></center>
+                                                                </b></td>
+                                                        </tr>
+                                                    </table>
+                                                </center>
+                                            </div>
+                                            <div class="stat-digit">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction1:(E<sub>1</sub>)S<sub>1</sub>+NADPH +H<sup>+</sup>⟺ P<sub>1</sub>+ NADP<sup>+</sup>
+                                            </div>
+
+                                            <div>
+                                                <center><img
+                                                        src="../src/mo-1.png"
+                                                        width="208" height="108" /></center>
+                                            </div>
+                                            <div class="stat-digit">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction2:(E<sub>2</sub>)S<sub>2</sub>+NADP<sup>+</sup>⟹ P<sub>2</sub>+NADPH +H<sup>+</sup> 
+                                            </div>
+                                            <div>
+                                                <center><img
+                                                        src="../src/mo-2.png"
+                                                        width="199" height="95" /></center>
+                                            </div>
+
+                                            <div class="stat-digit">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is not advisable to assume that the enzyme consumes the substrate and the cofactor at equal rates. In order for the two reactions to be balanced, the net consumption of NADPH should be 0, which means:
+                                            </div>
+
+                                            <div>
+                                                <center><img
+                                                        src="../src/mo-3.png"
+                                                        width="112" height="45" /></center>
+                                            </div>
+
+                                            <div class="stat-digit">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parameter is listed in the following table. <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Table. 2 Parameter Selection
+                                            </div>
+                                            <div>
+                                                <center>
+                                                    <table width="600" border="1">
+                                                        <tr>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>Parameter</center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>Value</center>
+                                                                </b></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>K<sub>m1</sub></center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>0.06±0.006 mM</center>
+                                                                </b></td>
+                                                            
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>K<sub>m2</sub></center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>0.216±0.007 mM</center>
+                                                                </b></td>
+                                                            
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>K<sub>2</sub></center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>1.309±0.80 s<sup>-1</sup></center>
+                                                                </b></td>
+                                                            
+                                                            
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>K<sub>1</sub></center>
+                                                                </b></td>
+                                                            <td width="60" height="30"><b>
+                                                                    <center>8.12±0.56 s<sup>-1</sup></center>
+                                                                </b></td>
+                                                            
+                                                        </tr>
+                                                    </table>
+                                                </center>
+                                            </div>
+                                            <br>
+                                            <div class="stat-digit">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bringing in the parameters and substrate concentrations we can find:
+                                            </div>
+
+                                            <center>
+                                                <img src="../src/mo-4.png"
+                                                    width="125" height="105" />
+                                                
+                                            </center>
+
+                                           
+
+                                            <div class="stat-digit">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From the results the usage (mol) of the two enzymes is different. Considering the molecular weight of the two enzymes is about 2:1, the ratio should be about 1:8 (g).
+                                            </div>
+
+                                            
+                                            <div class="stat-digit">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However, the above calculation is based on the fact that both enzymes are at their optimal temperatures. The activity of GDH is lower at higher temperatures while the activity of TbsADH is higher. Therefore, the effect of temperature on the activity of both enzymes needs to be considered for industrial applications to reconcile the balance between the reactions.
+                                            </div>
+
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--<div class="row">
                         <div class="test_div">
                             <div class="col-lg-12">
                                 <div class="card">
